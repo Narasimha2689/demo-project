@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent demo
     stages{
         stage ("Git Chekout"){
             steps{
@@ -9,6 +9,21 @@ pipeline{
         stage ("Unit Testing"){
             steps{
                 sh "mvn test"
+            }
+        }
+        stage ("Intigration Testing"){
+            steps{
+                sh "mvn verify -DskipUnitTests"
+            }
+        }
+        stage ("Maven Build"){
+            steps{
+                sh "mvn clean install"
+            }
+        }
+        stage ("Static Code Analysis"){
+            steps{
+                
             }
         }
     }
