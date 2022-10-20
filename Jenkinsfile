@@ -21,10 +21,10 @@ pipeline{
                 sh "mvn clean install"
             }
         }
-        stage ("Static Code Analysis"){
+        /*stage ("Static Code Analysis"){
             steps{
                 
             }
-        }
+        }*/
     }
 }
