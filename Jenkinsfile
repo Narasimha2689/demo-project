@@ -1,5 +1,5 @@
 pipeline{
-    agent demo
+    agent {label 'demo'}
     stages{
         stage ("Git Chekout"){
             steps{
