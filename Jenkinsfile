@@ -1,8 +1,8 @@
 pipeline{
     agent { label 'demo' }
-    parameters {
-        string (name: 'person' defaultvalue: 'Naresh' description: 'string parameter')
-    }
+    /*parameters {
+        string (name: 'person' defaultValue: 'Naresh' description: 'string parameter')
+    }*/
     stages{
         stage ("Git Chekout"){
             steps{
