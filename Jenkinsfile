@@ -1,7 +1,7 @@
 pipeline{
     agent { label 'demo' }
     options {
-        timestamps
+        timestamps()
             }
     /*parameters {
         string (name: 'person' defaultValue: 'Naresh' description: 'string parameter')
