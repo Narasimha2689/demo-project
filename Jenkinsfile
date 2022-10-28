@@ -4,7 +4,7 @@ pipeline{
         timestamps()
             }
     /*parameters {
-        string (name: 'person' defaultValue: 'Naresh' description: 'string parameter')
+        string (name: 'person' defaultValue: 'Narfdsesh' description: 'string parameter')
     }*/
     stages{
         stage ("Git Chekout"){
